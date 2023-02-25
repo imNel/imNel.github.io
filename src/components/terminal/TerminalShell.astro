@@ -1,0 +1,14 @@
+---
+import NelFetch from "./NelFetch.astro";
+import TerminalCommand from "./TerminalCommand.astro";
+import TerminalNav from "./TerminalNav.astro";
+---
+
+<ul class="flex flex-col gap-4">
+  <TerminalCommand>
+    <NelFetch />
+  </TerminalCommand>
+  <TerminalCommand>
+    <TerminalNav />
+  </TerminalCommand>
+</ul>

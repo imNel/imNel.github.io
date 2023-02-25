@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .powerline::before {
+    content: "";
+    display: flex;
+    margin-right: 0.5rem;
+    margin-top: 0.1rem;
+    padding-left: 38px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .powerline::before {
+      background: url("powerline-ivory.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    .powerline::before {
+      background: url("powerline-gunmetal.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

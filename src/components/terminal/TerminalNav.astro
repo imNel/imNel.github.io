@@ -1,0 +1,12 @@
+---
+import FetchLink from "./FetchLink.astro";
+---
+
+<h2>ls</h2>
+<nav>
+  <ul class="flex flex-row gap-4">
+    <li><FetchLink text={"index.astro"} link={"/"} /></li>
+    <li><FetchLink text={"blog.astro"} link={"/blog"} /></li>
+    <li><FetchLink text={"projects.astro"} link={"/projects"} /></li>
+  </ul>
+</nav>
