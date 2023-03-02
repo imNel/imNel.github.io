@@ -3,7 +3,7 @@ import FetchLink from "./FetchLink.astro";
 ---
 
 <h2>nelfetch</h2>
-<div class="flex gap-4">
+<div class="flex flex-col gap-4 md:flex-row">
   <!-- <div class="h-[358px] w-[358px] overflow-hidden"> -->
   <!--   <img -->
   <!--     alt="me" -->
@@ -11,7 +11,11 @@ import FetchLink from "./FetchLink.astro";
   <!--     class="m-[-27px] box-content aspect-square h-[352px] w-[352px] border-[30px] border-dashed" -->
   <!--   /> -->
   <!-- </div> -->
-  <img alt="me" src="me.png" class="aspect-square" />
+  <img
+    alt="me"
+    src="me.png"
+    class="aspect-square object-cover pr-[38px] md:pr-0"
+  />
   <ul>
     <li>nel@astro</li>
     <li>---------</li>

@@ -12,13 +12,13 @@
   }
   @media (prefers-color-scheme: dark) {
     .powerline::before {
-      background: url("powerline-ivory.svg");
+      background: url("/powerline-ivory.svg");
       background-repeat: no-repeat;
     }
   }
   @media (prefers-color-scheme: light) {
     .powerline::before {
-      background: url("powerline-gunmetal.svg");
+      background: url("/powerline-gunmetal.svg");
       background-repeat: no-repeat;
     }
   }
