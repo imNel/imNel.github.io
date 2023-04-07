@@ -12,21 +12,24 @@ import FetchLink from "./FetchLink.astro";
   <!--   /> -->
   <!-- </div> -->
   <img
-    alt="me"
+    alt="A picture of me and my dog, Roxy"
     src="me.png"
-    class="aspect-square object-cover pr-[38px] md:pr-0"
+    class="aspect-square object-cover pr-[38px] dark:saturate-[0.8] md:pr-0"
   />
   <ul>
     <li>nel@astro</li>
     <li>---------</li>
-    <li>OS: macOS, Asahi Linux, Void Linux</li>
+    <li>OS: macOS, Asahi Linux, Crystal Linux</li>
     <li>WM: yabai, sway</li>
-    <li>Terminal: WezTerm</li>
+    <li>Terminal: kitty</li>
     <li>
       Editor:{" "}
-      <FetchLink text="neovim" link="https://github.com/imNel/nvim" />
+      <FetchLink
+        text="neovim"
+        link="https://github.com/imNel/dotfiles/tree/main/.config/nvim"
+      />
     </li>
-    <li>Languages: TypeScript, Lua, Rust (soon)</li>
-    <li>Favourite Libraries: Astro, Solid, tRPC, Tailwind, React</li>
+    <li>Favourite Languages: TypeScript, Lua, Kotlin</li>
+    <li>Favourite Libraries: Astro, Tailwind, Solid, tRPC, React</li>
   </ul>
 </div>

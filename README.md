@@ -1,4 +1,4 @@
-# Welcome to my [Portfolio](https://imnel.github.io)
+# Welcome to my [Portfolio](https://nel.fyi)
 
 ## 🧞 Commands
 

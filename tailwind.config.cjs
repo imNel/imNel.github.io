@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Plus Jakarta Sans", "sans-serif"],
-      serif: ["Zodiak", "serif"],
       mono: ["JetBrains Mono", "monospace"],
     },
     colors: {
@@ -13,6 +12,6 @@ module.exports = {
       gunmetal: "#151618",
     },
     extend: {},
-    plugins: [],
   },
+  plugins: [require("@tailwindcss/typography")],
 };

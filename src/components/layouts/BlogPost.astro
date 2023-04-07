@@ -1,10 +1,6 @@
 ---
-export interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
-import "../assets/global.css";
+import "../../assets/global.css";
+import TerminalHeader from "../terminal/TerminalHeader.astro";
 ---
 
 <!DOCTYPE html>
@@ -14,15 +10,16 @@ import "../assets/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title ? title + " | nel@astro" : "nel@astro"}</title>
+    <title>blog | nel@astro</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@400&f[]=zodiak@700&f[]=jet-brains-mono@400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body
-    class="h-screen w-full bg-ivory text-gunmetal dark:bg-gunmetal dark:text-ivory"
+    class="mx-auto min-h-screen max-w-screen-md bg-ivory p-4 text-gunmetal dark:bg-gunmetal dark:text-ivory"
   >
+    <TerminalHeader />
     <slot />
   </body>
 </html>
