@@ -1,7 +1,3 @@
----
-import FetchLink from "./FetchLink.astro";
----
-
 <h2>nelfetch</h2>
 <div class="flex flex-col gap-4 md:flex-row">
   <!-- <div class="h-[358px] w-[358px] overflow-hidden"> -->
@@ -24,10 +20,9 @@ import FetchLink from "./FetchLink.astro";
     <li>Terminal: kitty</li>
     <li>
       Editor:{" "}
-      <FetchLink
-        text="neovim"
-        link="https://github.com/imNel/dotfiles/tree/main/.config/nvim"
-      />
+      <a href="https://github.com/imNel/dotfiles/tree/main/.config/nvim">
+        neovim
+      </a>
     </li>
     <li>Favourite Languages: TypeScript, Lua, Kotlin</li>
     <li>Favourite Libraries: Astro, Tailwind, Solid, tRPC, React</li>

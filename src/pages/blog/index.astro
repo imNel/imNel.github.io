@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import BlogPost from "../../components/layouts/BlogPost.astro";
-import TerminalHeader from "../../components/terminal/TerminalHeader.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -14,19 +13,16 @@ const posts = (await getCollection("blog")).sort(
       posts.map((post, i) => {
         return (
           <li>
-            <div
-              class={
-                "my-2 h-[1px] w-full bg-gunmetal dark:bg-ivory" +
-                (i === 0 ? " hidden" : "")
-              }
-            />
+            {i !== 0 ? (
+              <div class="my-2 h-px w-full bg-gunmetal/20 dark:bg-ivory/20" />
+            ) : null}
             <a
-              class="text-2xl underline decoration-transparent transition hover:decoration-gunmetal dark:hover:decoration-ivory"
+              class="text-2xl decoration-transparent"
               href={"/blog/" + post.slug}
             >
               {post.data.title}
             </a>
-            <p class="font-mono ">{post.data.date.toLocaleDateString()}</p>
+            <p class="font-mono">{post.data.date.toLocaleDateString()}</p>
           </li>
         );
       })

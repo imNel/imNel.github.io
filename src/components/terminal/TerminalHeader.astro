@@ -1,12 +1,6 @@
----
-import FetchLink from "./FetchLink.astro";
----
-
 <nav class="powerline flex font-mono text-xl">
   <ul class="mb-4 flex flex-row gap-4">
-    <li>
-      <FetchLink text={"Home"} link={"/"} aria_label="" />
-    </li>
-    <li><FetchLink text={"Blog"} link={"/blog"} /></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
   </ul>
 </nav>

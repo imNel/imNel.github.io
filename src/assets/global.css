@@ -31,4 +31,8 @@
   .prose :where(code):not(:where([class~="not-prose"] *))::after {
     content: "";
   }
+
+  a {
+    @apply underline decoration-gunmetal/50 transition hover:decoration-gunmetal dark:decoration-ivory/50 dark:hover:decoration-ivory;
+  }
 }
