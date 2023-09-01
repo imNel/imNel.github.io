@@ -1,5 +1,5 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import BlogPost from "../../components/layouts/BlogPost.astro";
 
 export async function getStaticPaths() {
@@ -16,12 +16,12 @@ const { Content } = await post.render();
 ---
 
 <BlogPost>
-  <h1 class="mb-2 text-4xl lg:text-5xl lg:mb-4">
+  <h1 class="mb-2 text-4xl lg:mb-4 lg:text-5xl">
     {post.data.title}
   </h1>
   <p class="font-mono lg:text-lg">{post.data.date.toLocaleDateString()}</p>
-  <div class="my-4 lg:my-8 h-[1px] w-full bg-gunmetal dark:bg-ivory"></div>
-  <article class="prose lg:prose-lg dark:prose-invert">
+  <div class="my-4 h-[1px] w-full bg-gunmetal dark:bg-ivory lg:my-8"></div>
+  <article class="prose dark:prose-invert lg:prose-lg">
     <Content />
   </article>
 </BlogPost>
