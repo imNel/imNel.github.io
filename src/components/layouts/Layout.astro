@@ -4,7 +4,6 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import { ViewTransitions } from "astro:transitions";
 import "../../assets/global.css";
 ---
 
@@ -20,7 +19,6 @@ import "../../assets/global.css";
       href="https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@400&f[]=zodiak@700&f[]=jet-brains-mono@400&display=swap"
       rel="stylesheet"
     />
-    <ViewTransitions />
   </head>
   <body
     class="min-h-screen w-full bg-ivory text-gunmetal dark:bg-gunmetal dark:text-ivory"
