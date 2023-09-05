@@ -23,6 +23,7 @@ jobs:
         uses: withastro/action@v0.3.0
         with:
           node-version: 18
+          pnpm-version: 8.x.x
 
   deploy:
     needs: build
