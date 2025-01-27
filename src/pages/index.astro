@@ -4,6 +4,12 @@ import TerminalShell from "../components/terminal/TerminalShell.astro";
 ---
 
 <Layout title="~">
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="Nel's Blog"
+    href={new URL("/blog/rss", Astro.site)}
+  />
   <main
     class="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center p-5"
   >
