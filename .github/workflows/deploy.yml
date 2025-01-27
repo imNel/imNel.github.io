@@ -18,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Astro Deploy
-        uses: withastro/action@v0.3.0
+        uses: withastro/action@v3
         with:
           node-version: 18
-          pnpm-version: 8.x.x
+          package-manager: pnpm@latest
 
   deploy:
     needs: build
@@ -34,4 +34,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
